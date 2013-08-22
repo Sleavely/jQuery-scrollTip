@@ -35,7 +35,9 @@
         'right' : '10px',
         'top' : topPos + 'px',
         'background-color' : 'rgba(0, 0, 0, 0.7)',
-        'color' : '#FFFFFF'
+        'color' : '#FFFFFF',
+        'padding' : '0.3em',
+        'border-radius' : '3px',
       });
       $tips.push($tip);
     });
