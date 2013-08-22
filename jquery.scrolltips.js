@@ -14,6 +14,10 @@
       options = defaultOptions;
     }
     
+    var $tipContainer = jQuery('<div id="scrolltips"></div>');
+    $tipContainer.css('clear', 'both');
+    jQuery(options.scrollbar).append($tipContainer);
+    
     //figure out scrollbar height and stuff
     var windowHeight = jQuery(window).height();
     var containerHeight = jQuery(options.scrollbar).height();
@@ -42,9 +46,8 @@
       $tips.push($tip);
     });
     
-    var $tipContainer = jQuery('<div id="scrolltips"></div>');
+    
     $tipContainer.append($tips);
-    jQuery(options.scrollbar).append($tipContainer);
     $tipContainer.fadeOut(options.fadeDuration);
     
     
